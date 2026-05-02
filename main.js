@@ -121,3 +121,113 @@ for (let i = 0; i < inventario.length; i++) {
   console.log(inventario[i]);
 }
 
+//ejercicio 11
+let mochila = [];
+
+// Agregar objetos
+mochila.push("linterna");
+mochila.push("comida");
+mochila.push("mapa");
+
+// Quitar el último
+mochila.pop();
+
+// Mostrar resultado
+console.log(mochila);
+
+const inventario = ["espada", "poción", "llave", "escudo"];
+
+if (inventario.includes("llave")) {
+  console.log("La puerta se abre");
+} else {
+  console.log("Necesitás una llave");
+}
+
+//Ejercicio 12
+const inventario = ["espada", "poción", "llave", "escudo"];
+
+if (inventario.includes("llave")) {
+  console.log("La puerta se abre");
+} else {
+  console.log("Necesitás una llave");
+}
+
+//Ejercicio 13
+function saludarUsuario(nombre) {
+  console.log("Bienvenido/a, " + nombre);
+}
+
+saludarUsuario("Milo");
+
+//Ejercicio 14
+function calcularVidaRestante(vida, danio) {
+  return vida - danio;
+}
+
+let resultado = calcularVidaRestante(100, 30);
+console.log(resultado);
+
+//Ejercicio 15
+const sumar = (a, b) => {
+  return a + b;
+};
+
+console.log(sumar(10, 5));
+
+//Ejercicio 16
+const jugador = {
+  nombre: "Luna",
+  vida: 100,
+  energia: 80,
+  nivel: 1,
+  inventario: ["espada", "poción"]
+};
+
+// Mostrar cada propiedad
+console.log("Nombre:", jugador.nombre);
+console.log("Vida:", jugador.vida);
+console.log("Energía:", jugador.energia);
+console.log("Nivel:", jugador.nivel);
+console.log("Inventario:", jugador.inventario);
+
+//Ejercicio 17
+const jugador = {
+  nombre: "Kai",
+  nivel: 1,
+  monedas: 0
+};
+
+// Subir nivel
+jugador.nivel += 1;
+
+// Sumar monedas
+jugador.monedas += 50;
+
+// Mostrar resultado
+console.log(jugador);
+
+//Ejercicio 18
+const personajes = [
+  { nombre: "Luna", vida: 100, tipo: "maga", nivel: 3 },
+  { nombre: "Kai", vida: 120, tipo: "guerrero", nivel: 4 },
+  { nombre: "Nina", vida: 90, tipo: "arquera", nivel: 2 }
+];
+
+for (let i = 0; i < personajes.length; i++) {
+  let p = personajes[i];
+  console.log(`${p.nombre} es ${p.tipo} y está en nivel ${p.nivel}`);
+}
+
+//Ejercicio 19
+const personajesFuertes = personajes.filter((personaje) => {
+  return personaje.nivel >= 3;
+});
+
+console.log(personajesFuertes);
+
+//Ejercicio 20
+const nombres = personajes.map((personaje) => {
+  return personaje.nombre;
+});
+
+console.log(nombres);
